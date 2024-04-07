@@ -64,7 +64,36 @@ const convert = async function () {
     console.error("one of the currencies is not supported yet");
   }
 };
+// if change was backwards
+const convertBackwards = async function () {
+  try {
+    // getting the user's selected options
+    const selectedTo = from.options[from.selectedIndex].value;
+    const selectedFrom = to.options[to.selectedIndex].value;
+
+    console.log(selectedFrom);
+
+    // get exchange rates from the user's selected value
+    let rateResponse = await fetch(
+      `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${selectedFrom}.json`
+    );
+
+    const rates = await rateResponse.json();
+    // get the rate to the user's selected claue
+    const rate = rates[selectedFrom][selectedTo];
+
+    // only show 3 digits
+    let conversion = result.value * rate;
+    value.value = conversion.toFixed(3);
+    // console.log(rates[selectedTo]);
+  } catch (e) {
+    // rest countries API might contain curriences that are not supported in RatesAPI or vise versa, this is to catch these errors.
+    console.error("one of the currencies is not supported yet");
+  }
+};
 
 value.addEventListener("keydown", convert);
 from.addEventListener("change", convert);
 to.addEventListener("change", convert);
+
+result.addEventListener("keydown", convertBackwards);
