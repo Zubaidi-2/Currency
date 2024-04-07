@@ -40,7 +40,7 @@ html {
 .site-info {
   background-color: #82ed9b;
   width: 50%;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +61,7 @@ h1 {
   align-self: center;
   display: grid;
   background-color: #c7f9cc;
-  height: 100vh;
+  height: 50vh;
   color: #0e2f21;
 }
 
