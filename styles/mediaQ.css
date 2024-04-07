@@ -82,14 +82,25 @@
 
 @media screen and (max-width: 410px) {
   /* styles for screens with a maximum width of 600px */
+  html {
+    height: 100vh;
+  }
 
   h1 {
     font-size: 2.6 rem;
   }
+  .site-info {
+    background-color: #82ed9b;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0e2f21;
+  }
 
   .site-description {
     font-size: 0.9rem;
-    height: 50vh;
   }
   .main-cta {
     height: 50vh;
