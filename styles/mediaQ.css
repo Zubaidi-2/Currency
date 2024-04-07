@@ -59,6 +59,8 @@
 
   .site-description {
     font-size: 1rem;
+    justify-content: center;
+    align-items: center;
   }
   .start-cta {
     font-size: 1rem;
@@ -101,6 +103,8 @@
 
   .site-description {
     font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
   }
   .main-cta {
     height: 50vh;
