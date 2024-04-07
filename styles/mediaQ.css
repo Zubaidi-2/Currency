@@ -35,6 +35,24 @@
   html {
     height: 100vh;
   }
+
+  .site-info {
+    background-color: #82ed9b;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0e2f21;
+  }
+  .site-description {
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-cta {
+    height: 50vh;
+  }
   h1 {
     font-size: 3rem;
   }
