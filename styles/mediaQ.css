@@ -32,7 +32,9 @@
 
 @media screen and (max-width: 600px) {
   /* styles for screens with a maximum width of 600px */
-
+  html {
+    height: 100vh;
+  }
   h1 {
     font-size: 3rem;
   }
