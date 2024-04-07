@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="scripts/currencyApi.js"></script>
+    <script defer src="scripts/btn.js"></script>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,18 +18,39 @@
     <!-- main information -->
     <div class="main-container">
       <div class="site-info">
-        <h1 class="site-title">Currency Exchangor</h1>
+        <h1 class="site-title">Currency Converter</h1>
         <p class="site-description">
           "Seamlessly convert between traditional currencies and
           cryptocurrencies all in one place!"
         </p>
-        <a href="#" class="cta-start">Start!</a>
       </div>
-      <div class="main-img">
-        <img
-          class="image-index"
-          src="images/pexels-karolina-grabowska-4386406.jpg"
-        />
+      <div class="main-cta">
+        <button class="start-cta">Start now!</button>
+        <div class="hidden">
+          <input class="number" type="number" />
+          <select name="from" id="from" required>
+            <!-- <option value="from">from</option> -->
+          </select>
+          <a class="switch">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+          <input class="result" type="number" />
+
+          <select name="to" id="to" required></select>
+        </div>
       </div>
     </div>
   </body>
