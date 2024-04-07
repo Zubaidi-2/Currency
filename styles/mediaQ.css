@@ -1,0 +1,92 @@
+@media screen and (max-width: 1200px) {
+  /*styles for screens with a maximum width of 1200px */
+  h1 {
+    font-size: 4rem;
+  }
+
+  .site-description {
+    font-size: 1.2rem;
+  }
+
+  .convert input {
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-info {
+    width: 100%;
+  }
+
+  .main-cta {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* styles for screens with a maximum width of 600px */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .site-description {
+    font-size: 1rem;
+  }
+  .start-cta {
+    font-size: 1rem;
+  }
+
+  .convert input {
+    font-size: 1.1rem;
+    width: 6rem;
+  }
+
+  option {
+    padding: 4rem;
+    width: 6rem;
+  }
+  select {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  /* styles for screens with a maximum width of 600px */
+
+  h1 {
+    font-size: 2.6 rem;
+  }
+
+  .site-description {
+    font-size: 0.9rem;
+  }
+  .start-cta {
+    font-size: 1rem;
+  }
+
+  .convert input {
+    font-size: 0.9rem;
+    width: 5rem;
+  }
+
+  option {
+    padding: 3rem;
+    width: 4rem;
+  }
+  select {
+    padding: 9px 10px;
+    border-radius: 5px;
+    width: 6rem;
+    font-size: 0.9rem;
+  }
+}
