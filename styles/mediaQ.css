@@ -96,7 +96,7 @@
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center !important  ;
     align-items: center;
     color: #0e2f21;
   }

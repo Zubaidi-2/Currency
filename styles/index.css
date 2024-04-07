@@ -36,10 +36,10 @@ html {
   max-width: 100%;
   max-height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 .site-info {
   background-color: #82ed9b;
-  width: 50%;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ h1 {
 }
 
 .main-cta {
-  width: 50%;
+  width: 100%;
   align-self: center;
   display: grid;
   background-color: #c7f9cc;
